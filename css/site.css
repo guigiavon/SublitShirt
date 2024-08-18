@@ -1,0 +1,137 @@
+
+
+a {
+    text-decoration: none;
+    color:white;
+}
+.tabla {
+    display: flex;
+}
+.navbar {
+    justify-content: end;
+    display: flex;
+}
+h3, h5{
+     color:white;
+}
+
+
+#inferior {
+    color: #FFF;
+    background: #000;
+    position: fixed; /*El div ser� ubicado con relaci�n a la pantalla*/
+    left: 0px; /*A la derecha deje un espacio de 0px*/
+    right: 0px; /*A la izquierda deje un espacio de 0px*/
+    bottom: 0px; /*Abajo deje un espacio de 0px*/
+    
+    z-index: 100;
+   
+}
+
+.my-3{
+    color:white;
+}
+body{
+    background-color:white;
+}
+.nav-link active {
+   font-family:'Comic Sans MS';
+   font-size: 22px;
+}
+
+
+a:hover {
+    color: red ;
+    cursor: pointer;
+}
+
+.contacto1 {
+    display: flex;
+   
+    color: white;   
+  
+}
+
+.bi {
+    font-size: 10em !important;
+   
+}
+
+label {
+    color: white;
+    font-size:20px;
+}
+
+.princialpro{
+    background: #000;
+
+}
+.princialpro h1{
+    text-align: center;
+}
+#contact{
+    align-content: center;
+}
+svg{
+    color: white;
+}
+
+.col-lg-4 text-lg-start primero{
+    margin-left: 20px !important;
+}
+
+.addToCard{
+    background-color: white;
+    border-radius:10px;
+   outline:none;
+}
+
+.addToCard:hover {
+    background-color: red !important;
+    font-family:'Comic Sans MS';
+    font-size: 18px;
+    border-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+ }
+ .card{
+    border-radius: 30px;
+ }
+
+ .bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+  }
+  .bn38 {
+    border-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+  }
+    
+  .bn38:hover {
+    background-color: #60605e;
+    text-decoration: none;
+    color: darkgoldenrod;
+  }
+
+  .btn1{
+    text-decoration: none;
+    font-size: 30px;
+   color :white;
+   border-color: transparent;
+
+  }
+.btn1:hover{
+    text-decoration: none;
+    color: greenyellow;
+}
+ 
