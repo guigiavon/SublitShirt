@@ -8,8 +8,9 @@ a {
     display: flex;
 }
 .navbar {
-    justify-content: end;
+    justify-content: center;
     display: flex;
+    color: coral;
 }
 h3, h5{
      color:white;
@@ -19,13 +20,14 @@ h3, h5{
 #inferior {
     color: #FFF;
     background: #000;
-    position: fixed; /*El div ser� ubicado con relaci�n a la pantalla*/
-    left: 0px; /*A la derecha deje un espacio de 0px*/
-    right: 0px; /*A la izquierda deje un espacio de 0px*/
-    bottom: 0px; /*Abajo deje un espacio de 0px*/
-    
-    z-index: 100;
-   
+    position: fixed; /* ¡CAMBIO CLAVE! Esto lo fija al viewport */
+    left: 0;         /* Ocupa todo el ancho desde la izquierda */
+    right: 0;        /* Ocupa todo el ancho hasta la derecha */
+    bottom: 0;       /* Lo ancla a la parte inferior de la pantalla */
+    width: 100%;     /* Asegura que ocupe el 100% del ancho disponible */
+    padding: 15px 0; /* Agrega un poco de espacio interno para el contenido */
+    text-align: center; /* Opcional: centra el texto dentro del div */
+    z-index: 1000;   /* Opcional: asegura que esté por encima de otros elementos */
 }
 
 .my-3{
@@ -134,4 +136,15 @@ svg{
     text-decoration: none;
     color: greenyellow;
 }
+
+.texto-con-borde-blanco {
+    color: white; /* Color de relleno del texto */
+    -webkit-text-stroke-width: 1px; /* Ancho del borde para WebKit (Chrome, Safari, Edge) */
+    -webkit-text-stroke-color: black; /* Color del borde para WebKit */
+    text-stroke-width: 1px; /* Para navegadores que soportan la propiedad estándar */
+    text-stroke-color: black; /* Para navegadores que soportan la propiedad estándar */
+    /* Propiedades adicionales si el texto es pequeño, para que el borde se vea mejor */
+    font-size: 2em; /* Ejemplo, ajusta el tamaño */
+    font-weight: bold; /* Para que el texto sea más grueso */
+  }
  

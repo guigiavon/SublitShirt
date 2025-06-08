@@ -1,0 +1,36 @@
+/* Asegura que las imágenes dentro de las tarjetas sean responsivas */
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Altura fija para que todas las imágenes tengan el mismo tamaño (ajusta según necesites) */
+    object-fit: cover; /* Recorta la imagen para que cubra el espacio sin distorsionarse */
+    border-radius: 0.25rem 0.25rem 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+/* Estilos para los elementos de la galería */
+.gallery-item {
+    border: 1px solid #ddd; /* Borde suave para las tarjetas */
+    border-radius: 0.25rem; /* Bordes ligeramente redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para un efecto de profundidad */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transición suave para el hover */
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta ligeramente al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra más pronunciada al pasar el ratón */
+}
+
+/* Puedes ajustar el tamaño de los títulos y textos si es necesario */
+.gallery-item .card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.gallery-item .card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Ajuste para el padding superior del contenido principal, debido al navbar fijo */
+.principalpro {
+    padding-top: 100px; /* Ajusta este valor si tu navbar cambia de altura */
+}
